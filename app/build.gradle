@@ -18,13 +18,13 @@ android {
         }
     }
     buildTypes.each {
-        it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', MyOpenWeatherMapApiKey
+        it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', '"5ec41710646ca1bea2f9b3fd24e6d798"'
     }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.github.bumptech.glide:glide:3.5.2'
-    compile 'com.android.support:appcompat-v7:21.0.2'
-    compile 'com.android.support:support-annotations:22.0.0'
+    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile 'com.android.support:support-annotations:21.0.0'
 }
